@@ -113,7 +113,7 @@
 //	int sz = sizeof(arr) / sizeof(arr[0]);
 //	int right = sz - 1;
 //	int left = 0;
-//	int k = 17;
+//	int k = 7;
 //
 //	int flag = 0;
 //	while (left <= right)
@@ -200,68 +200,68 @@
 //猜对了，就告诉你:恭喜你，猜对了
 // 
 // 
-//void menu()
-//{
-//	printf("*************************\n");
-//	printf("******** 1. play  *******\n");
-//	printf("******** 0. exit  *******\n");
-//	printf("*************************\n");
-//}
-//
-//#include<stdlib.h>
-//#include<time.h>
-////rand函数会返回一个0-32767之间的随机数
-//void game()
-//{
-//	//1.生成随机数
-//	int ret = rand()%100+1;
-//	//printf("%d\n",ret);
-//	//2.猜数字
-//	int guess = 0;
-//	while (1)
-//	{
-//		printf("猜数字:>");
-//		scanf("%d", &guess);
-//		if (guess < ret)
-//		{
-//			printf("猜小了\n");
-//		}
-//		else if (guess > ret)
-//		{
-//			printf("猜大了\n");
-//		}
-//		else
-//		{
-//			printf("猜对了");
-//			break;
-//		}
-//	}
-//
-//}
-//
-//int main()
-//{
-//	int input = 0;
-//	//设置了随机的生成器
-//	srand((unsigned int)time(NULL));
-//	do
-//	{
-//		menu();
-//		printf("请选择");
-//		scanf("%d",&input);
-//		switch (input)
-//		{
-//		case 1:
-//			game();
-//			break;
-//		case 0:
-//			printf("退出游戏\n");
-//			break;
-//		default:
-//			printf("选择错误\n");
-//			break;
-//		}
-//
-//	} while (input);
-//	return 0;
-//}
+void menu()
+{
+	printf("*************************\n");
+	printf("******** 1. play  *******\n");
+	printf("******** 0. exit  *******\n");
+	printf("*************************\n");
+}
+
+#include<stdlib.h>
+#include<time.h>
+//rand函数会返回一个0-32767之间的随机数
+void game()
+{
+	//1.生成随机数
+	int ret = rand()%100+1;
+	//printf("%d\n",ret);
+	//2.猜数字
+	int guess = 0;
+	while (1)
+	{
+		printf("猜数字:>");
+		scanf("%d", &guess);
+		if (guess < ret)
+		{
+			printf("猜小了\n");
+		}
+		else if (guess > ret)
+		{
+			printf("猜大了\n");
+		}
+		else
+		{
+			printf("猜对了");
+			break;
+		}
+	}
+
+}
+
+int main()
+{
+	int input = 0;
+	//设置了随机的生成器
+	srand((unsigned int)time(NULL));
+	do
+	{
+		menu();
+		printf("请选择");
+		scanf("%d",&input);
+		switch (input)
+		{
+		case 1:
+			game();
+			break;
+		case 0:
+			printf("退出游戏\n");
+			break;
+		default:
+			printf("选择错误\n");
+			break;
+		}
+
+	} while (input);
+	return 0;
+}
