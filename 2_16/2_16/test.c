@@ -2,38 +2,38 @@
 #include<stdio.h>
 
 //字符串逆序
-//int my_strlen(char arr[])
-//{
-//	int count = 0;
-//	while (*arr++)
-//	{
-//		count++;
-//	}
-//	return count;
-//}
-//
-//void swap(char arr[])
-//{
-//	int left = 0;
-//	int right = my_strlen(arr) - 1;
-//	while (left < right)
-//	{
-//		char* tmp = arr[left];
-//		arr[left] = arr[right];
-//		arr[right] = tmp;
-//		left++;
-//		right--;
-//	}
-//
-//}
-//
-//int main()
-//{
-//	char arr[] = "abcdef";
-//	swap(arr);
-//	printf("%s",arr);
-//	return 0;
-//}
+int my_strlen(char arr[])
+{
+	int count = 0;
+	while (*arr++)
+	{
+		count++;
+	}
+	return count;
+}
+
+void swap(char arr[])
+{
+	int left = 0;
+	int right = my_strlen(arr) - 1;
+	while (left < right)
+	{
+		char* tmp = arr[left];
+		arr[left] = arr[right];
+		arr[right] = tmp;
+		left++;
+		right--;
+	}
+
+}
+
+int main()
+{
+	char arr[] = "abcdef";
+	swap(arr);
+	printf("%s",arr);
+	return 0;
+}
 
 
 //喝汽水，1瓶汽水1元，2个空瓶可以换一瓶汽水，给20元，可以多少汽水
